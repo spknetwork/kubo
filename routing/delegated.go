@@ -13,7 +13,7 @@ import (
 	drclient "github.com/ipfs/go-libipfs/routing/http/client"
 	"github.com/ipfs/go-libipfs/routing/http/contentrouter"
 	logging "github.com/ipfs/go-log"
-	"github.com/ipfs/kubo/config"
+	"github.com/spknetwork/kubo/config"
 	dht "github.com/libp2p/go-libp2p-kad-dht"
 	"github.com/libp2p/go-libp2p-kad-dht/dual"
 	"github.com/libp2p/go-libp2p-kad-dht/fullrt"

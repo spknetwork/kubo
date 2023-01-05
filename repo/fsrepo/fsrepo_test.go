@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ipfs/kubo/thirdparty/assert"
+	"github.com/spknetwork/kubo/thirdparty/assert"
 
 	datastore "github.com/ipfs/go-datastore"
-	config "github.com/ipfs/kubo/config"
+	config "github.com/spknetwork/kubo/config"
 )
 
 // swap arg order

@@ -15,8 +15,8 @@ import (
 	"time"
 
 	logging "github.com/ipfs/go-log/v2"
-	"github.com/ipfs/kubo/config"
-	serial "github.com/ipfs/kubo/config/serialize"
+	"github.com/spknetwork/kubo/config"
+	serial "github.com/spknetwork/kubo/config/serialize"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/multiformats/go-multiaddr"
 )

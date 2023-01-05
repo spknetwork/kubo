@@ -77,10 +77,10 @@ We trust this node to behave properly and thus don't limit *outbound* connection
 We apply any limits that libp2p has for its protocols/services
 since we assume libp2p knows best here.
 
-Source: [core/node/libp2p/rcmgr_defaults.go](https://github.com/ipfs/kubo/blob/master/core/node/libp2p/rcmgr_defaults.go)
+Source: [core/node/libp2p/rcmgr_defaults.go](https://github.com/spknetwork/kubo/blob/master/core/node/libp2p/rcmgr_defaults.go)
 
 ### User Supplied Override Limits
-Once Kubo has the [Computed Default Limits](#computed-default-limits), it then applies any user-supplied [`Swarm.ResourceMgr.Limits`](https://github.com/ipfs/kubo/blob/master/docs/config.md#swarmresourcemgrlimits) on top.
+Once Kubo has the [Computed Default Limits](#computed-default-limits), it then applies any user-supplied [`Swarm.ResourceMgr.Limits`](https://github.com/spknetwork/kubo/blob/master/docs/config.md#swarmresourcemgrlimits) on top.
 These become the [active limits](#how-does-one-see-the-active-limits).
 
 While `Swarm.ResourceMgr.Limits` can be edited directly, it is also possible to use `ipfs swarm limit` command to inspect and tweak specific limits at runtime.
@@ -123,7 +123,7 @@ This can be analyzed by viewing the limit with `ipfs swarm limit system` and com
 The simiplest way to identify all resources across all scopes that are close to exceeding their limit is with a command like `ipfs swarm stats --min-used-limit-perc=90 all`.
 
 Sources:
-* [kubo resource manager logging](https://github.com/ipfs/kubo/blob/master/core/node/libp2p/rcmgr_logging.go)
+* [kubo resource manager logging](https://github.com/spknetwork/kubo/blob/master/core/node/libp2p/rcmgr_logging.go)
 * [libp2p resource manager messages](https://github.com/libp2p/go-libp2p/blob/master/p2p/host/resource-manager/scope.go)
 
 ### What are the "Application error ... cannot reserve ..." messages?
@@ -152,7 +152,7 @@ A dump of what limits are actually being used by the resource manager ([Computed
 can be obtained by `ipfs swarm limit all`.
 
 ### How does one see the Computed Default Limits?
-This can be observed with an empty [`Swarm.ResourceMgr.Limits`](https://github.com/ipfs/kubo/blob/master/docs/config.md#swarmresourcemgrlimits)
+This can be observed with an empty [`Swarm.ResourceMgr.Limits`](https://github.com/spknetwork/kubo/blob/master/docs/config.md#swarmresourcemgrlimits)
 and then [seeing the active limits](#how-does-one-see-the-active-limits).
 
 ### How does one monitor libp2p resource usage?

@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	bootstrap2 "github.com/ipfs/kubo/core/bootstrap"
-	"github.com/ipfs/kubo/core/coreapi"
-	mock "github.com/ipfs/kubo/core/mock"
-	"github.com/ipfs/kubo/thirdparty/unit"
+	bootstrap2 "github.com/spknetwork/kubo/core/bootstrap"
+	"github.com/spknetwork/kubo/core/coreapi"
+	mock "github.com/spknetwork/kubo/core/mock"
+	"github.com/spknetwork/kubo/thirdparty/unit"
 
 	files "github.com/ipfs/go-ipfs-files"
 	testutil "github.com/libp2p/go-libp2p-testing/net"

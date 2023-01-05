@@ -8,7 +8,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/ipfs/kubo/core/commands/cmdenv"
+	"github.com/spknetwork/kubo/core/commands/cmdenv"
 
 	"github.com/cheggaaa/pb"
 	cmds "github.com/ipfs/go-ipfs-cmds"

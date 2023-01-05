@@ -7,13 +7,13 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ipfs/kubo/core/node/helpers"
-	irouting "github.com/ipfs/kubo/routing"
+	"github.com/spknetwork/kubo/core/node/helpers"
+	irouting "github.com/spknetwork/kubo/routing"
 
 	ds "github.com/ipfs/go-datastore"
 	offroute "github.com/ipfs/go-ipfs-routing/offline"
-	config "github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/repo"
+	config "github.com/spknetwork/kubo/config"
+	"github.com/spknetwork/kubo/repo"
 	dht "github.com/libp2p/go-libp2p-kad-dht"
 	ddht "github.com/libp2p/go-libp2p-kad-dht/dual"
 	"github.com/libp2p/go-libp2p-kad-dht/fullrt"

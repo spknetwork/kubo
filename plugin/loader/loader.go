@@ -8,14 +8,14 @@ import (
 	"runtime"
 	"strings"
 
-	config "github.com/ipfs/kubo/config"
-	cserialize "github.com/ipfs/kubo/config/serialize"
+	config "github.com/spknetwork/kubo/config"
+	cserialize "github.com/spknetwork/kubo/config/serialize"
 	"github.com/ipld/go-ipld-prime/multicodec"
 
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/coreapi"
-	plugin "github.com/ipfs/kubo/plugin"
-	fsrepo "github.com/ipfs/kubo/repo/fsrepo"
+	"github.com/spknetwork/kubo/core"
+	"github.com/spknetwork/kubo/core/coreapi"
+	plugin "github.com/spknetwork/kubo/plugin"
+	fsrepo "github.com/spknetwork/kubo/repo/fsrepo"
 
 	logging "github.com/ipfs/go-log"
 	opentracing "github.com/opentracing/opentracing-go"

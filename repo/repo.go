@@ -10,7 +10,7 @@ import (
 	keystore "github.com/ipfs/go-ipfs-keystore"
 
 	ds "github.com/ipfs/go-datastore"
-	config "github.com/ipfs/kubo/config"
+	config "github.com/spknetwork/kubo/config"
 	ma "github.com/multiformats/go-multiaddr"
 )
 

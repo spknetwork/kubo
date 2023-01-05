@@ -77,7 +77,7 @@ test_expect_success "GET IPFS directory with index.html returns redirect to add 
 "
 
 # This enables go get to parse go-import meta tags from index.html files stored in IPFS
-# https://github.com/ipfs/kubo/pull/3963
+# https://github.com/spknetwork/kubo/pull/3963
 test_expect_success "GET IPFS directory with index.html and no trailing slash returns expected output when go-get is passed" "
   curl -s -o response_with_slash \"http://127.0.0.1:$port/ipfs/$HASH2/dirwithindex?go-get=1\"  &&
   test_should_contain \"hello i am a webpage\" response_with_slash
@@ -103,7 +103,7 @@ test_expect_success "GET IPFS inlined zero-length data object returns ok code (2
   test_should_contain "Content-Length: 0" empty_ok_response
 '
 
-# https://github.com/ipfs/kubo/issues/9238
+# https://github.com/spknetwork/kubo/issues/9238
 test_expect_success "GET IPFS inlined zero-length data object with byte range returns ok code (200)" '
   curl -sD - "http://127.0.0.1:$port/ipfs/bafkqaaa" -H "Range: bytes=0-1048575" > empty_ok_response &&
   test_should_contain "HTTP/1.1 200 OK" empty_ok_response &&

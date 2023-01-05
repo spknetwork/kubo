@@ -10,12 +10,12 @@ import (
 
 	"go.uber.org/fx"
 
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/bootstrap"
-	"github.com/ipfs/kubo/core/coreapi"
-	libp2p2 "github.com/ipfs/kubo/core/node/libp2p"
-	"github.com/ipfs/kubo/repo"
+	"github.com/spknetwork/kubo/config"
+	"github.com/spknetwork/kubo/core"
+	"github.com/spknetwork/kubo/core/bootstrap"
+	"github.com/spknetwork/kubo/core/coreapi"
+	libp2p2 "github.com/spknetwork/kubo/core/node/libp2p"
+	"github.com/spknetwork/kubo/repo"
 
 	"github.com/ipfs/go-datastore"
 	syncds "github.com/ipfs/go-datastore/sync"
@@ -24,7 +24,7 @@ import (
 	"github.com/libp2p/go-libp2p-pubsub/pb"
 	"github.com/libp2p/go-libp2p/core/peer"
 
-	mock "github.com/ipfs/kubo/core/mock"
+	mock "github.com/spknetwork/kubo/core/mock"
 	"github.com/libp2p/go-libp2p/p2p/net/mock"
 )
 
